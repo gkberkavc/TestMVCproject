@@ -1,0 +1,16 @@
+﻿<b>Add a proverb or an expression to our database!</b>
+<div>
+    @using (Html.BeginForm())
+    {
+  
+        <hr />
+        <input type="text"  name="txtSoz" placeholder="Please enter a word" />
+        <input type="submit" value="Gönder" />
+    }
+</div>
+<div>
+    @if (ViewBag.Message != null)
+    {
+        <div><b>Kelime Başarı ile kaydoldu</b> </div>
+    }
+</div>
